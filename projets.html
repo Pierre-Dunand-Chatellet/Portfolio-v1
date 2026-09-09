@@ -1,0 +1,227 @@
+<!doctype html>
+<!--
+  Portfolio v1 — liste des projets
+
+  Archive de la première version du portfolio (2024-2026), conservée pour la
+  maquette. Les projets affichés sont des exemples : titres et textes
+  provisoires, vignettes remplacées par des blocs gris. Seule la mise en page
+  est d'origine.
+
+  Trois fichiers, aucune dépendance ni outil de build :
+    index.html / projets.html  — le contenu
+    styles.css                 — la mise en forme
+    script.js                  — menu, thème, compteur, transitions
+-->
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin">
+  <title>Projets — archive du portfolio 2024-2026</title>
+  <meta name="description" content="Tous les projets de Pierre Dunand-Chatellet : développement web, Python et design.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8f7f4" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="image/Logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+      <img src="image/Logo.webp" alt="" class="brand-mark">
+      <span>Pierre Dunand-Chatellet</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="#web">Web</a>
+      <a href="#python">Python</a>
+      <a href="#design">Design</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Basculer le thème" data-theme-toggle>
+      <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+  </header>
+
+  <main class="projects-page">
+    <div class="projects-container">
+      <p class="s-label">Portfolio complet</p>
+      <h1 class="s-title">Tous mes projets</h1>
+
+      <section class="project-category" id="web">
+        <h2 class="category-title">Développement Web</h2>
+        <div class="proj-grid">
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 01</h3>
+          <p class="proj-desc">Texte provisoire : deux ou trois lignes de description, juste de quoi occuper la place et montrer comment la carte se comporte.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 02</h3>
+          <p class="proj-desc">Texte provisoire. Le contenu réel de ce portfolio a été retiré, seule la mise en page est conservée.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 03</h3>
+          <p class="proj-desc">Texte provisoire servant à caler la hauteur des cartes et l'alignement de la grille sur plusieurs colonnes.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">Design</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 04</h3>
+          <p class="proj-desc">Texte provisoire : description courte d'un projet fictif, pour juger de la typographie et des espacements.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 05</h3>
+          <p class="proj-desc">Texte provisoire : deux ou trois lignes de description, juste de quoi occuper la place et montrer comment la carte se comporte.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+        </div>
+      </section>
+
+      <section class="project-category" id="python">
+        <h2 class="category-title">Python</h2>
+        <div class="proj-grid">
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 06</h3>
+          <p class="proj-desc">Texte provisoire. Le contenu réel de ce portfolio a été retiré, seule la mise en page est conservée.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 07</h3>
+          <p class="proj-desc">Texte provisoire servant à caler la hauteur des cartes et l'alignement de la grille sur plusieurs colonnes.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+        </div>
+      </section>
+
+      <section class="project-category" id="design">
+        <h2 class="category-title">Design / Affiches</h2>
+        <div class="proj-grid">
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 08</h3>
+          <p class="proj-desc">Texte provisoire : description courte d'un projet fictif, pour juger de la typographie et des espacements.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+
+          <article class="proj-card">
+          <div class="proj-thumb is-placeholder" aria-hidden="true"></div>
+          <div class="proj-meta">
+            <span class="proj-year">20XX</span>
+            <div class="tags">
+              <span class="tag">Design</span>
+            </div>
+          </div>
+          <h3 class="proj-name">Projet 09</h3>
+          <p class="proj-desc">Texte provisoire : deux ou trois lignes de description, juste de quoi occuper la place et montrer comment la carte se comporte.</p>
+          <span class="proj-link">Voir le projet <span class="arrow-sm"></span></span>
+        </article>
+        </div>
+      </section>
+
+      <a href="index.html#projects" class="back-link">← Retour à l'accueil</a>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Pierre Dunand-Chatellet</span>
+    <span>Fait avec soin · Doussard, France</span>
+    <a href="https://github.com/Pierre-Dunand-Chatellet" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Pierre Dunand-Chatellet">
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      GitHub
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+  <p class="archive-note">
+    Archive du portfolio 2024–2026. Les projets affichés sont des exemples :
+    textes provisoires et vignettes remplacées par des blocs gris.
+  </p>
+</body>
+
+</html>
