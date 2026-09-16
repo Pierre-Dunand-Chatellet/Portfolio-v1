@@ -222,6 +222,7 @@ section {
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1001,6 +1002,7 @@ footer {
 
   .hero {
     min-height: 100vh;
+    min-height: 100dvh;
     padding-bottom: 4rem;
   }
 
@@ -1210,4 +1212,11 @@ footer {
 /* la barre d'archive ne doit pas masquer la fin de page */
 body {
   padding-bottom: 4.5rem;
+}
+
+/* Focus clavier : un contour visible sur tout ce qu'on atteint avec Tab.
+   :focus-visible ne s'affiche pas au clic souris, seulement au clavier. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
