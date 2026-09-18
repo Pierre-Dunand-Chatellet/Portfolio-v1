@@ -6,7 +6,7 @@ maquette qui m'a servi à apprendre la mise en page en CSS.
 
 ![Aperçu de la page projets](apercu.webp)
 
-**En ligne :** http://site-254.studio2.serveur-dedie.fr/portfolio-v1/
+**En ligne :** https://dunandchatellet.fr/portfolio-v1/
 
 ## Contenu d'exemple
 
@@ -16,7 +16,7 @@ provisoires, blocs gris) afin de ne montrer que la mise en page. Le formulaire
 de contact est volontairement inerte.
 
 Mes vrais projets sont sur mon portfolio actuel :
-http://site-254.studio2.serveur-dedie.fr/
+https://dunandchatellet.fr/
 
 ## Ce qu'il y a dedans
 
